@@ -1,5 +1,5 @@
 {
-  "name": "screepsmods-cpuUpdater",
+  "name": "screepsmods-cpuupdater",
   "version": "1.0.0",
   "description": "Mod for Screeps to link the CPU with the GCL",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/DeathTech154/screepsMods/cpuUpdater.git"
   },
-  "author": "Clement Delalande (https://github.com/iKlem), DeathTech (DeathTech154)",
+  "author": "DeathTech (https://github.com/DeathTech154)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DeathTech154/screepsMods/issues"

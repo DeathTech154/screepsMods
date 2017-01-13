@@ -9,7 +9,7 @@ Credits for original mod (https://github.com/ScreepsMods/screepsmod-gcltocpu) by
 
 ### Installation
 #### On dedicated server
-* Install with npm : `npm i screepsmods-cpuUpdater`
+* Install with npm : `npm i screepsmods-cpuupdater`
 
 #### On the [Steam workshop](link comming soon)
 * Subscribe to the mod
