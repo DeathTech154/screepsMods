@@ -17,14 +17,7 @@ module.exports = (config) => {
    let minute = 60
    let hour = 3600
    let day = 86400
-   /* Tick definitions for frequency.
-   let one = 1
-   let ten = 10
-   let hundred = 100
-   let k1 = 1000
-   let k10 = 10000
-   let k100 = 100000
-   */
+
    let backup_type = "time"; // Options: "tick" or "time" !NOTE! Tick based does not work yet.
    let backup_frequency = 600; // Options: If type is "tick" this means every 5 ticks. Else frequency is in seconds.
 
@@ -34,52 +27,15 @@ module.exports = (config) => {
    // Thanks to the above preconfigured statements you can mix & match.
    
    // End of config section.
-   /*
-   if(config.engine) {// adds test() to the game as a function.
-      config.engine.on('playerSandbox', function(sandbox) {
-         sandbox.test = function() {
-            sandbox.console.log('Current game tick is:', sandbox.Game.time);
-            }
-      });
-   }
-    */
    
    backup_frequency = backup_frequency * 1000 // Convert sec to ms
    if(cli) {
       cli.on('cliSandbox', function(sandbox) {
          //sandbox.test = function() {console.log('Current game tick is:', sandbox.Game.time);}
          var fs = require('fs');
-         /*
-         // Async Build Callback example
-         var checkUser = function (Username) {
-            var UserData = storage.db['users'].findOne({ username: Username });
-            setTimeout(function () {
-               sandbox.print(UserData);
-            },200);
-         };
-         */
-         // Date.now() -> Get current data in numbers
-         // Date()     -> Get current time.
-         
-         // User this to do the tick version. Tick will only be available inside setTimeout func for limited time.
-         /*
-         function getTick() {
-         function getDatTick (callback) {
-            var tickData = storage.env.get(storage.env.keys.GAMETIME);
-            setTimeout(function () {
-               var CurRecTick = tickData
-               CurRecTick.then(value => {console.log(value);});
-            },400);
-         };
-         var CurRecTick = getDatTick()
-         sandbox.print(CurRecTick);
-         }
-         */
+
          // Setup Chronjob backup -> Needs decider logic for tick or time based.
          function rbAutoBackup() {
-            // Works ... Kinda sandbox.print(storage.env.get(storage.env.keys.GAMETIME));
-            // doesn't work -> common.getGametime()
-            // rbBackup()
             if (backup_type == "tick") {}// Not ready Don't use
             else {
                // Use time based
@@ -132,10 +88,4 @@ module.exports = (config) => {
          }
       });
    }
-   // var date = Date() // Get date -> "Sat Jan 14 2017 18:50:03 GMT+0000 (GMT Standard Time)"
-   // var testdate = date.split(" ");  // Split by spaces
-   // var timestamp = testdate[4].split(":");
-   //                      YEAR MONTH DAY HOUR MIN SEC
-   // var organisedDate =  testdate[3] + "-" + testdate[1] + "-" + testdate[2] + "-" + timestamp[0] + "-" + timestamp[1] + "-" + timestamp[2]
-   // Yields = "2017-Jan-14-18-50-03"
 };

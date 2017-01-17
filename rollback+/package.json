@@ -1,11 +1,11 @@
 {
-  "name": "screepsmods-cliShortcuts",
+  "name": "screepsmods-rollback+",
   "version": "0.0.1",
-  "description": "Mod for Screeps to provide more commands for the cli",
+  "description": "Mod for automatic database backups & doing rollbacks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeathTech154/screepsMods/cliShortcuts.git"
+    "url": "git+https://github.com/DeathTech154/screepsMods/rollback.git"
   },
   "author": "DeathTech",
   "license": "ISC",
