@@ -2,11 +2,8 @@
 ###### Current version: 0.0.1
 ### Information
 
-This mod is a fast shortcut mod releasing new functions that do the same old same old.
-They are intended to reduce "accidents" and reduce the ammount of struggling with (){}.
-By automatically building the same commands.
-As well as provide a vast array of commands to do the "private server common tasks".
-And just regular common tasks.
+A mod for the private server of the game "Screeps" that add automated backup functionallity.
+As well as a function to reset to a previous backup automatically.
 
 ### Installation
 Place in the server in a "mods" directory. It requires to be iside atleast 1 folder below server level atm.
@@ -25,3 +22,9 @@ The configurable components are as follows:
 - backup("FolderName")    // Initiates a manual backup
 - startauto()             // Initiates the automatic backup protocol if not defined before in config
 - restore("FolderName")   // Initiates a rollback to the given folder.
+
+### Caveats
+
+- After using rollback the db is cached thus using the command again will result in the same db being restored to.
+This occurs regardless of deleteing the file or targeting a different one.
+For the time being only one rollback target can be chosen to change the target the server may have to be reset.
