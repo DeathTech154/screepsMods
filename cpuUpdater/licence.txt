@@ -1,0 +1,24 @@
+"DeathTech" refferenced in this document always refers to the following:
+DeathTech154 from github
+DeathTech from www.deathtech.tk
+DeathTech from npms.com
+
+All rights reserved for "DeathTech".
+
+This licence grants temorary usage of the software.
+Modfication is allowed for contribution purposes and personal use.
+As long as this software is not used for commercial purposes without paying a commercial monthly fee.
+
+This fee will be a small contribution of "1 gbp" to be paid to DeathTech.
+For a commercial usage licence please contact DeathTech at "contact@deathtech.tk" .
+
+Any derivative projects or projects based upon this work must carry the same licence.
+Aswell as concede all rights to "DeathTech"
+
+These condions will survive unless exempted by "DeathTech"
+
+This licence applies to all mods created by "DeathTech".
+This includes but is not limited to the versions displayed on:
+"https://github.com/DeathTech154/screepsMods" or
+"https://www.npmjs.com/~deathtech" or
+on the valve steam network workshop.
