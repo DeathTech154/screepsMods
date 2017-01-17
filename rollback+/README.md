@@ -1,5 +1,6 @@
 # screepsmods rollback+
 ###### Current version: 0.0.1
+[![NPM](https://nodei.co/npm/screepsmods-rollback.png?downloads=true)](https://nodei.co/npm/screepsmods-rollback/)
 ### Information
 
 A mod for the private server of the game "Screeps" that add automated backup functionallity.
