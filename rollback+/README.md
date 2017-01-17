@@ -8,6 +8,11 @@ As well as a function to reset to a previous backup automatically.
 ### Installation
 Place in the server in a "mods" directory. It requires to be iside atleast 1 folder below server level atm.
 
+NPM:
+-npm i screepsmods-rollback
+
+Or just download the git.
+
 ### Configuration
 The mod has a configurable section in index.js
 The configurable components are as follows:
