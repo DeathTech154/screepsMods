@@ -1,0 +1,17 @@
+{
+  "name": "screepsmods-cliShortcuts",
+  "version": "0.0.1",
+  "description": "Mod for Screeps to provide more commands for the cli",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathTech154/screepsMods/cliShortcuts.git"
+  },
+  "author": "DeathTech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeathTech154/screepsMods/issues"
+  },
+  "homepage": "https://github.com/DeathTech154/screepsMods#readme",
+  "screeps_mod": true
+}
