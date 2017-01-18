@@ -1,6 +1,6 @@
 {
   "name": "screepsmods-rollback+",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mod for automatic database backups & doing rollbacks",
   "main": "index.js",
   "repository": {

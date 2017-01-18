@@ -1,5 +1,5 @@
 # screepsmods rollback+
-###### Current version: 0.0.1
+###### Current version: 0.0.2
 ### Information
 
 A mod for the private server of the game "Screeps" that add automated backup functionallity.
@@ -17,16 +17,18 @@ Or just download the git.
 The mod has a configurable section in index.js
 The configurable components are as follows:
 
-- enableAutoBackup = 1    // Set to 0 to only take manual backups.
-- enableAutoStart = 1     // Auto start game after a rollback? 1= Yes 0= No
-- backup_type = "time";   // Options: "tick" or "time" !NOTE! Tick based does not work yet.
-- backup_frequency = 600; // Options: If type is "tick" this means every 5 ticks. Else frequency is in seconds. 600 -> every 10 minutes.
-- TBRBA = 5000;           // Time between rollback Actions, this is usefull if you have large databases for rollback to ensure the whole thing is loaded.
+- enableAutoBackup = 1   // Set to 0 to only take manual backups.
+- enableAutoStart = 1    // Auto start game after a rollback? 1= Yes 0= No
+- backup_type = "time"   // Options: "tick" or "time" !NOTE! Tick based does not work yet.
+- backup_frequency = 600 // Options: If type is "tick" this means every 5 ticks. Else frequency is in seconds. 600 -> every 10 minutes.
+- TBRBA = 5000           // Time between rollback Actions, this is usefull if you have large databases for rollback to ensure the whole thing is loaded.
+- backup_format = "%u-%Y-%M-%D-%h-%m-%s" // Use custom format for the auto backup system.
 
 ### Commands
 - backup("FolderName")    // Initiates a manual backup
 - startauto()             // Initiates the automatic backup protocol if not defined before in config
 - restore("FolderName")   // Initiates a rollback to the given folder.
+- format("options")       // Returns formatting data for manual backup.
 
 ### Caveats
 
