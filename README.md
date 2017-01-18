@@ -1,5 +1,5 @@
 # screepsmods
-###### Current version: 1.0.2
+###### Current version: 1.0.1
 ## Information
 Screepsmods is a collection of all screeps private server modifications made by myself (DeathTech).
 And possibly a couple of mods that needed improvement and were modded by me (In which case original licence holds and atrib are given.)
@@ -21,16 +21,13 @@ A welcome manager that will allow server admins to easily manage and change the 
 - [x] Saving & updating new welcome message during runtime.
 - [ ] Scriptable welcome messages.
 
-### rollback+ (v0.0.2): 
+### rollback+ (v0.0.1): 
 A database manager providing rollback support and automated backups.
 
 #### Features:
 - [x] Automatic backups
 - [x] Semi-auto backups
 - [x] Rollback to a previous state
-- [x] Customised format for backup names
-- [ ] Backup by tick
-- [ ] Rollback by tick
 
 ### WorldEdit (v0.0.1): 
 A map editor for screeps.
